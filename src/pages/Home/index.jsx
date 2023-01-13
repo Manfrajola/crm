@@ -4,7 +4,7 @@ class Home extends React.Component {
   render() {
     return (
       <>
-        <h1>Go!</h1>
+        <h1>Let's go!</h1>
       </>
     );
   }
