@@ -12,7 +12,7 @@ class Navbar extends React.Component {
               <Span>Home</Span>
             </Li>
           </Slink>
-          <Slink to="/home">
+          <Slink to="/equipea">
             <Li>
               <Span>01</Span>
             </Li>
@@ -37,7 +37,7 @@ class Navbar extends React.Component {
               <Span>05</Span>
             </Li>
           </Slink>
-          <Slink to="/home">
+          <Slink to="/equipef">
             <Li>
               <Span>06</Span>
             </Li>

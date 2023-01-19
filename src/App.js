@@ -1,10 +1,11 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import GlobalStyle from "./styles/GlogalStyle";
 import Home from "./pages/Home";
+import Equipea from "./pages/Equipea";
 import Equipeb from "./pages/Equipeb";
 import Equipec from "./pages/Equipec";
 import Equipej from "./pages/Equipej";
-
+import Equipef from "./pages/Equipef";
 
 function App() {
   return (
@@ -15,9 +16,11 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
+            <Route path="/equipea" element={<Equipea />} />
             <Route path="/equipeb" element={<Equipeb />} />
             <Route path="/equipec" element={<Equipec />} />
             <Route path="/equipej" element={<Equipej />} />
+            <Route path="/equipef" element={<Equipef />} />
           </Routes>
         </div>
       </Router>
