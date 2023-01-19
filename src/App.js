@@ -3,6 +3,7 @@ import GlobalStyle from "./styles/GlogalStyle";
 import Home from "./pages/Home";
 import Equipeb from "./pages/Equipeb";
 import Equipec from "./pages/Equipec";
+import Equipef from "./pages/Equipef";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route path="/home" element={<Home />} />
             <Route path="/equipeb" element={<Equipeb />} />
             <Route path="/equipec" element={<Equipec />} />
+            <Route path="/equipef" element={<Equipef />} />
           </Routes>
         </div>
       </Router>
