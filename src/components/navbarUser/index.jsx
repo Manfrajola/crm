@@ -42,6 +42,11 @@ class Navbar extends React.Component {
               <Span>06</Span>
             </Li>
           </Slink>
+          <Slink to="/home">
+            <Li>
+              <Span>07</Span>
+            </Li>
+          </Slink>
         </Ul>
       </Nav>
     );
