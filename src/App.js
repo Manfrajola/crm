@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Equipea from "./pages/Equipea";
 import Equipeb from "./pages/Equipeb";
 import Equipec from "./pages/Equipec";
+import Equipee from "./pages/Equipee";
 import Equipef from "./pages/Equipef";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Route path="/equipea" element={<Equipea />} />
             <Route path="/equipeb" element={<Equipeb />} />
             <Route path="/equipec" element={<Equipec />} />
+            <Route path="/equipee" element={<Equipee />} />
             <Route path="/equipef" element={<Equipef />} />
           </Routes>
         </div>

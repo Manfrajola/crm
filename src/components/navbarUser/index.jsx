@@ -32,7 +32,7 @@ class Navbar extends React.Component {
               <Span>04</Span>
             </Li>
           </Slink>
-          <Slink to="/home">
+          <Slink to="/equipee">
             <Li>
               <Span>05</Span>
             </Li>
