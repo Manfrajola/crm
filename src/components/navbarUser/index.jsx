@@ -14,22 +14,32 @@ class Navbar extends React.Component {
           </Slink>
           <Slink to="/home">
             <Li>
-              <Span>Client</Span>
+              <Span>01</Span>
             </Li>
           </Slink>
           <Slink to="/home">
             <Li>
-              <Span>Subject</Span>
+              <Span>02</Span>
             </Li>
           </Slink>
           <Slink to="/home">
             <Li>
-              <Span>Planner</Span>
+              <Span>03</Span>
             </Li>
           </Slink>
           <Slink to="/home">
             <Li>
-              <Span>Remark</Span>
+              <Span>04</Span>
+            </Li>
+          </Slink>
+          <Slink to="/home">
+            <Li>
+              <Span>05</Span>
+            </Li>
+          </Slink>
+          <Slink to="/home">
+            <Li>
+              <Span>06</Span>
             </Li>
           </Slink>
         </Ul>
