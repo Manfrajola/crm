@@ -5,6 +5,7 @@ import Equipea from "./pages/Equipea";
 import Equipeb from "./pages/Equipeb";
 import Equipec from "./pages/Equipec";
 import Equipee from "./pages/Equipee";
+import Equipej from "./pages/Equipej";
 import Equipef from "./pages/Equipef";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path="/equipec" element={<Equipec />} />
             <Route path="/equipee" element={<Equipee />} />
             <Route path="/equipef" element={<Equipef />} />
+            <Route path="/equipej" element={<Equipej />} />
           </Routes>
         </div>
       </Router>
