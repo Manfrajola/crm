@@ -3,12 +3,27 @@ import Navbar from '../../components/navbarUser'
 import { H2 } from './styles';
 import { DIV } from './styles';
 import { INPUT } from './styles';
+import { useState } from "react";
 
-class Equipea extends React.Component {
- render(){
-    
+
+function Equipea() {
+
+    function adicionaName(name){
+       
+        setName(name)
+        console.log('Cadastrou o usuário')
+        console.log(name)
+
+        buscaInput = e =>{
+            console.log(e)
+        }
+    }
+
+    const [name, setName] = useState("");
+
     return (
         <>
+            
             <Navbar/>
             {/*primeiro teste */}
             <br/>
@@ -16,18 +31,23 @@ class Equipea extends React.Component {
              {/*SEGUNDO teste */}
              <br/>
              
-            <DIV>
-                <br/><br/><br/>
-                    <INPUT type="text" /> 
-                <br/><br/><br/><br/><br/>
-                    <INPUT type="text" />
-            </DIV>
+            <form onSubmit={adicionaName}/>
+                <DIV>
+                    <label htmlFor="name"></label>
+                    <INPUT type="text" id="name" name="name" placeholder= "Digite o seu e-mail"/>
+
+                    <INPUT type="text" id="name2" name="name" placeholder= "Digite o seu e-mail"
+                    onKeyDown={(e) => this.buscaInput(e)}/>
+                </DIV>
+            
+            <form/>
+            
             
             
         </>
     )
-
- }
+    
+ 
    
 }
 
