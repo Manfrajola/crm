@@ -14,9 +14,9 @@ function Equipea() {
         console.log('Cadastrou o usuário')
         console.log(name)
 
-        buscaInput = e =>{
-            console.log(e)
-        }
+      // buscaInput = e =>{
+        //    console.log(e)
+       // }
     }
 
     const [name, setName] = useState("");
