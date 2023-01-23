@@ -1,6 +1,6 @@
 import React from "react";
 import {useState} from "react";
-import styles from './styles';
+import { Input, Triangulo } from './styles';
 import Navbar from "../../components/navbarUser/index";
 
   
@@ -17,15 +17,14 @@ import Navbar from "../../components/navbarUser/index";
           </Navbar>
           <body>
             <div>
-              <div style={styles.triangulo}>  
+              <Triangulo>  
               <p>{value}</p>
-              </div>
-            <input style={styles.input} 
-            type="text" 
+              </Triangulo>
+            <Input type="text" 
             value={value} 
             onChange={handleChange} 
-            className="estilo-input">
-            </input>
+            >
+            </Input>
              </div>
              </body>
              </>
