@@ -1,38 +1,62 @@
-import {React, useState} from 'react'
+import {React} from 'react'
+import Card from '../../components/equipebCards';
 import Navbar from "../../components/navbarUser"
 
-import { H1, Div, Div2, Div3, Div4 } from "./styles";
+import { MainStyle, BoardStyle} from "./styles";
 
 const Equipeb = () => {
-  const[message, setMessage] = useState('');
-
-  const handleMessage = (e) => {
-    setMessage(e.target.value);
-
-  }
+  const cards = [
+    {
+        id: 1,
+        span1: "Habilitado",
+        span2: "Funcionando",
+        text: "Este é o primeiro card",
+    },
+    {
+        id: 2,
+        span1: "Desabilitado",
+        span2: "Funcionando",
+        text: "Este é o segundo card",
+    },
+    {
+        id: 3,
+        span1: "Habilitado",
+        span2: "Funcionando",
+        text: "Este é o Terceiro card",
+    },
+    {
+      id: 4,
+      span1: "Habilitado",
+      span2: "Funcionando",
+      text: "Este é o quarto card",
+  },
+  {
+      id: 5,
+      span1: "Desabilitado",
+      span2: "Funcionando",
+      text: "Este é o quinto card",
+  },
+  {
+      id: 6,
+      span1: "Habilitado",
+      span2: "Funcionando",
+      text: "Este é o sexto card",
+  },
+];
 
   return (
-    <>
-    <Navbar />
-      <H1>Vamos</H1>
-      <Div>
-        <label>Digite Algo:</label>
-        <Div2>
-          <Div4>
-          <input
-            type="text"
-            id="message"
-            name="message"
-            onChange={handleMessage}
-            value={message}>
-          </input>
-          </Div4>
-          <Div3>
-            <span>{message}</span>
-          </Div3>
-        </Div2>
-      </Div>
-    </>
+    <MainStyle>
+      <Navbar />
+      <h1>Vamos</h1>
+      <BoardStyle>
+        {cards.map(item => (
+            <Card  
+              span1={item.span1} 
+              span2={item.span2} 
+              text={item.text} />
+        ))};
+      </BoardStyle>
+    </MainStyle>
   )
 }
 
