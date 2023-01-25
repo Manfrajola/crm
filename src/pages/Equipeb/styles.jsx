@@ -11,6 +11,7 @@ const BoardStyle = styled.div`
     grid-template-columns: 49% 49%;
     gap: 2%;
     padding: 10px;
+    overflow: auto;
 `
 const MainStyle = styled.div`
     h1{

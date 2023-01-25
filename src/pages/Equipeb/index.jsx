@@ -42,6 +42,81 @@ const Equipeb = () => {
       span2: "Funcionando",
       text: "Este é o sexto card",
   },
+  {
+    id: 1,
+    span1: "Habilitado",
+    span2: "Funcionando",
+    text: "Este é o primeiro card",
+},
+{
+    id: 2,
+    span1: "Desabilitado",
+    span2: "Funcionando",
+    text: "Este é o segundo card",
+},
+{
+    id: 3,
+    span1: "Habilitado",
+    span2: "Funcionando",
+    text: "Este é o Terceiro card",
+},
+{
+  id: 4,
+  span1: "Habilitado",
+  span2: "Funcionando",
+  text: "Este é o quarto card",
+},
+{
+  id: 5,
+  span1: "Desabilitado",
+  span2: "Funcionando",
+  text: "Este é o quinto card",
+},
+{
+  id: 6,
+  span1: "Habilitado",
+  span2: "Funcionando",
+  text: "Este é o sexto card",
+},
+{
+  id: 1,
+  span1: "Habilitado",
+  span2: "Funcionando",
+  text: "Este é o primeiro card",
+},
+{
+  id: 2,
+  span1: "Desabilitado",
+  span2: "Funcionando",
+  text: "Este é o segundo card",
+},
+{
+  id: 3,
+  span1: "Habilitado",
+  span2: "Funcionando",
+  text: "Este é o Terceiro card",
+},
+{
+id: 4,
+span1: "Habilitado",
+span2: "Funcionando",
+text: "Este é o quarto card",
+},
+{
+id: 5,
+span1: "Desabilitado",
+span2: "Funcionando",
+text: "Este é o quinto card",
+},
+{
+id: 6,
+span1: "Habilitado",
+span2: "Funcionando",
+text: "Este é o sexto card",
+},
+
+  
+  
 ];
 
   return (

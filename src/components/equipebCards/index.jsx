@@ -1,31 +1,51 @@
-import { CardStyle } from "./styles"
+import { Button, CardContent, CardHeader, CardStyle, Status, StatusCard, StatusCard2, CardBody } from "./styles"
 import {ReactComponent as DeleteIcon} from './assets/delete.svg'
 import {ReactComponent as EditIcon } from './assets/edit.svg'
+import { useState } from "react"
+import Modal from "./Modal"
+
 
 const Card = ({ span1, span2, text}) => {
 
-    const isEnabled = span1 === "Habilitado"
+    const [openModal, setOpenModal] = useState(false)
 
     return (
     
-            <CardStyle isEnabled={isEnabled} >
-                <div className="status isEnabled"></div>
-                <div className="cardContent">
-                <div className="cardHeader">
-                    <div className='statusCard isEnabled'>
+            <CardStyle >
+                <Status></Status>
+                <CardContent>
+                <CardHeader>
+                    <StatusCard>
                         {span1}
-                    </div>
-                    <div className="statusCard response">
+                    </StatusCard>
+                    <StatusCard2>
                         {span2}
+                    </StatusCard2>
+                    <div>
+                        <Button onClick={() => setOpenModal(true)}
+                            conteudo={"Deletar este usuario ?"}>
+                            <DeleteIcon />
+                        </Button>
+                        <div>
+                            <Modal isOpen={openModal}
+                                setModalOpen={() => setOpenModal(!openModal)}>
+                                    <p>Olá</p>
+                            </Modal>     
+                        </div>
                     </div>
-                    <div className="actions">
-                        <DeleteIcon /><EditIcon />
+                    <div>
+                        <div>
+                            <Button onClick={() => setOpenModal(true)}
+                                conteudo={"Editar este usuario ?"}>
+                                <EditIcon />
+                            </Button>
+                        </div>
                     </div>
-                </div>
-                    <div className="cardBody">
+                </CardHeader>
+                    <CardBody>
                         {text}
-                    </div>
-                </div>
+                    </CardBody>
+                </CardContent>
             </CardStyle>
         
     )
