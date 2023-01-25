@@ -12,7 +12,13 @@ export const H2 = styled.h2`
   text-align: center;
 `;
 
-
+export const Div = styled.div`
+  background-color: #ffdead;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+`;
 export const Input = styled.input`
   height: 35px;
   width: 400px;
@@ -22,29 +28,4 @@ export const Input = styled.input`
   display: block;
   //border-radius: 10px 20px 30px;
   border-radius: 10px;
-`;
-
-export const Container = styled.div`
- background-color:#E1E2E6;
-color:#fff;
-width:50%;
-height:800px;
-grid-template-columns: auto auto;
-margin:30px 10px;
-display: grid;
-grid-template-columns: 1;
-position:fixed;
-font-size:12px;
-border-radius:10px;
-overflow-y:scroll;
-&::-webkit-scrollbar {
-        background-color:#2b2b2b;
-        }
-    ::-webkit-scrollbar-thumb {
-        background-color:#AFB2BB;
-        
-    }
-    ::-webkit-scrollbar-track-piece {
-      background-color:#E1E2E6;
-    }
 `;
