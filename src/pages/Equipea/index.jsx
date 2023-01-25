@@ -3,23 +3,23 @@ import Navbar from '../../components/navbarUser'
 import { H2 } from './styles';
 import { DIV } from './styles';
 import { INPUT } from './styles';
-import { useState } from "react";
+//import { useState } from "react";
 
 
 function Equipea() {
 
     function adicionaName(name){
        
-        setName(name)
-        console.log('Cadastrou o usuário')
-        console.log(name)
+        //setName(name)
+        //console.log('Cadastrou o usuário')
+        //console.log(name)
 
       // buscaInput = e =>{
         //    console.log(e)
        // }
     }
 
-    const [name, setName] = useState("");
+    //const [name, setName] = useState("");
 
     return (
         <>
